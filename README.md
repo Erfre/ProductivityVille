@@ -30,7 +30,7 @@ To play you press anywhere on the screen and the timer will start. When the time
 
 ### History/Vision
 
-I was going to build a pomodoro application since I started reading up on the pomodoro technique and thought it would be a good exercise to
+I built a pomodoro application since I started reading up on the pomodoro technique and thought it would be a good exercise for my coding skills. I wanted this game to be like farmville but instead of farming crops you farmed pomodoro's to build stuff in the game. 
 
 
 ## Built With
