@@ -165,5 +165,7 @@ gulp.task('default', ['clean'], () => {
 
 gulp.task('deploy', function() {
     return gulp.src('./dist/**/*')
-        .pipe(ghPages());
+        .pipe(ghPages({
+      remoteUrl: "https://github.com/Erfre/ProductivityVille.git"
+    }));
 })
