@@ -93,7 +93,7 @@ var textEvent = {
         ctx.fillStyle= this.color;
         ctx.textAlign= this.align;
         ctx.fillText(text, x, y);
-    }
+    },
 	showMsg: function(){
 		if (displayMsg && this.text !== 'string') {
 			this.drawText();
