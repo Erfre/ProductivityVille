@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title id:"clo">pomodoro</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="text-muted">pomodoro</h3>
+      </div>
+
+
+      <div class="game">
+        <canvas id="main" width="700" height="700">
+
+        </canvas>
+        <canvas id="canvas" width="700" height="700">
+
+        </canvas>
+        <canvas id="buildings" width="700" height="700"></canvas>
+      </div>
+      <!--  this is the field in which you will add buttons-->
+      <div class="input">
+        <input type="text" value="Building name here" id="buildingName">
+        <button id="newBuilding">Add</button>
+      </div>
+      <div id="buildingBtn" class="btn-toolbar" role="toolbar">
+        <!-- create the buttons here, also use the onclick to create the building -->
+        <!-- <button name="building" onclick="">CLICK</button> -->
+      </div>
+
+      <div class="footer">
+        <p>♥ from the Yeoman team</p>
+      </div>
+    </div>
+
+    <script src="scripts/vendor.js"></script>
+
+    <script src="scripts/plugins.js"></script>
+
+
+    <script src="scripts/main.js"></script>
+</html>
