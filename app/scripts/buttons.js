@@ -21,7 +21,7 @@ var gong = new Audio('../gongTest.mp3'),
 		let x = 200,
 		    y = 200;
 		this.drawImage(canvas, '../images/' + this.state + '.png',x,y);
-		drawText(canvas,this.time, '40px Bungee Shade', 'black', 'center', 350, 252 );
+		this.drawText(canvas,this.time, 350, 252 );
 	},
 	drawImage: function(canvas,img,x,y){
 		let newImg = new Image;
@@ -36,5 +36,11 @@ var gong = new Audio('../gongTest.mp3'),
 		if (player.buildingList.length > 0) {
 			isometric.drawBuildings();
 		}
+	},
+	drawText: function(ctx,text,x,y){
+		ctx.font='40px Bungee Shade';
+		ctx.fillStyle= 'black';
+		ctx.textAlign= 'center';
+		ctx.fillText(text, x, y);
 	}
 };
