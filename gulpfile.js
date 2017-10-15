@@ -8,6 +8,8 @@ const wiredep = require('wiredep').stream;
 const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
+var ghPages = require('gulp-gh-pages')
+
 gulp.task('styles', () => {
   return gulp.src('app/styles/*.css')
     .pipe($.sourcemaps.init())
@@ -160,3 +162,8 @@ gulp.task('build', ['lint', 'html', 'images', 'fonts', 'extras'], () => {
 gulp.task('default', ['clean'], () => {
   gulp.start('build');
 });
+
+gulp.task('deploy', () => {
+    return gulp.src('./dist/**/*')
+        .pipe(ghPages());
+})
